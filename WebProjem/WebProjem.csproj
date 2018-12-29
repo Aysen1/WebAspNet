@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="style\images\" />
     <Folder Include="Views\site\" />
   </ItemGroup>
   <ItemGroup>

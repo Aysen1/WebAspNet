@@ -19,15 +19,29 @@
         border-right:1px solid black;
 	}
 	.menu ul li {float:left;list-style-type:none;}
-	.menu ul li a{color:black; font:17px Arial;text-decoration:none;display:block; padding:14px 15px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s;}
+	.menu ul li a
+    { 
+        color:black; 
+        font:17px Arial;
+        text-decoration:none;
+        display:block; 
+        padding:14px 15px;
+        transition:all .5s;
+        -webkit-transition:all .5s;
+        -moz-transition:all .5s;
+	}
 	.menu ul li a:hover{
 		background:red;
 		color:white
 	}
+        body {
+            background-color:#5019194a;
+        }
     </style>
 </head>
 <body>
     <div class="menu">
+        
         <ul>
             <li><a href="/Asp/Anasayfa">Anasayfa</a></li>
             <li><a href="/Asp/Hakkimda">Hakkımda</a></li>
@@ -38,6 +52,13 @@
     </div>
     <div>
         @RenderBody()
+    </div>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <a href="~/Views/Shared/_Layout.cshtml"><img src="~/style/images/logo.png" alt="aaaaaaaaa"/></a>
+            </div>
+        </div> 
     </div>
 </body>
 </html>
