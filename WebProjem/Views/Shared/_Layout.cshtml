@@ -7,24 +7,37 @@
     <style type="text/css">
         
 *{margin:0; padding:0;}
-	.menu{width:800px; height:48px; background:#000; margin:0 auto;border-bottom:4px solid red;}
+	.menu
+    {
+        width:800px; 
+        height:48px; 
+        background:#D2691E; 
+        margin:0 auto;
+        border-bottom:1px solid black;
+        border-top:1px solid black;
+        border-left:1px solid black;
+        border-right:1px solid black;
+	}
 	.menu ul li {float:left;list-style-type:none;}
-	.menu ul li a{color:#fff; font:17px Arial;text-decoration:none;display:block; padding:14px 15px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s;}
+	.menu ul li a{color:black; font:17px Arial;text-decoration:none;display:block; padding:14px 15px;transition:all .5s;-webkit-transition:all .5s;-moz-transition:all .5s;}
 	.menu ul li a:hover{
 		background:red;
-		color:yellow;
+		color:white
 	}
     </style>
 </head>
 <body>
     <div class="menu">
         <ul>
-            <li><a href="/Konular/Dersler">Dersler</a></li>
-            <li><a href="/Konular/Bolumler">Bölümler</a></li>
+            <li><a href="/Asp/Anasayfa">Anasayfa</a></li>
+            <li><a href="/Asp/Hakkimda">Hakkımda</a></li>
+            <li><a href="/Asp/Konular">Konular</a></li>
+            <li><a href="/Asp/Haberler">Haberler</a></li>
+            <li><a href="/Asp/iletisim">İletişim</a></li>
         </ul>
     </div>
     <div>
-        @RenderBody();
+        @RenderBody()
     </div>
 </body>
 </html>
